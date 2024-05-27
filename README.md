@@ -67,7 +67,7 @@ Analyze the results using the Calinski-Harabasz index and visualize the clusteri
 ## Acknowledgements
 - **Tajamul Sheikh**: Original research and dissertation
 - **Majid Sohrabi**: Supervisory guidance and support
-- **Higher School of Economics, Moscow**: Academic support and resources
+
 
 
 
