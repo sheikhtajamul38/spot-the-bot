@@ -22,7 +22,7 @@
    ```sh
    git clone https://github.com/username/spot-the-bot.git
    cd spot-the-bot
-Usage
+##Usage
 Data Collection and Pre-processing
 Collect text corpora from available sources, focusing on the Kanuri and Miskito languages. Clean and preprocess the data by removing irrelevant characters, tokenizing, and lemmatizing the text. Ensure all preprocessing scripts are run before moving to the next steps.
 
