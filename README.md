@@ -33,12 +33,41 @@ Use ChatGPT 3.5 to generate bot-like texts based on specific prompts. These text
 Train Word2Vec and FastText models on the preprocessed text data:
    ```sh
    from gensim.models import Word2Vec, FastText
-
+   # Training Word2Vec model
    word2vec_model = Word2Vec(sentences, vector_size=100, window=5, min_count=1, workers=4)
    word2vec_model.save("word2vec.model")
-   
+   # Training FastText model
    fasttext_model = FastText(sentences, vector_size=100, window=5, min_count=1, workers=4)
-   fasttext_model.save("fasttext.model")```
+   fasttext_model.save("fasttext.model")
+ ```
+
+## Statistical Analysis
+Perform statistical analysis to validate the clustering results:
+   ```sh
+   from scipy.stats import mannwhitneyu
+   # Example comparison of two distributions
+   stat, p = mannwhitneyu(data1, data2)
+   print(f'Statistics={stat}, p={p}')
+```
+Apply Holm-Bonferroni correction for multiple testing.
+ 
+## Results
+Analyze the results using the Calinski-Harabasz index and visualize the clustering with t-SNE and PCA plots:
+   ```sh
+   from sklearn.decomposition import PCA
+   import matplotlib.pyplot as plt
+   
+   # PCA for dimensionality reduction
+   pca = PCA(n_components=2)
+   principalComponents = pca.fit_transform(embeddings)
+   plt.scatter(principalComponents[:, 0], principalComponents[:, 1], c=clustering.labels_)
+   plt.show()
+```
+
+## Acknowledgements
+- **Tajamul Sheikh**: Original research and dissertation
+- **Majid Sohrabi**: Supervisory guidance and support
+- **Higher School of Economics, Moscow**: Academic support and resources
 
 
 
