@@ -21,3 +21,13 @@
 1. Clone the repository:
    ```sh
    git clone https://github.com/username/spot-the-bot.git
+   cd spot-the-bot
+Usage
+Data Collection and Pre-processing
+Collect text corpora from available sources, focusing on the Kanuri and Miskito languages. Clean and preprocess the data by removing irrelevant characters, tokenizing, and lemmatizing the text. Ensure all preprocessing scripts are run before moving to the next steps.
+
+Text Generation
+Use ChatGPT 3.5 to generate bot-like texts based on specific prompts. These texts will serve as a comparison to human-generated texts in further analyses.
+
+Word Embeddings
+Train Word2Vec and FastText models on the preprocessed text data:
